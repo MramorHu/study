@@ -1,0 +1,26 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.orig
+.DS_Store
+.settings
+.gradle
+.project
+.classpath
+file-uploads
+
+### build project ###
+*.class
+*.jar
+target
+
+### project file ###
+*.log
+/.mvn
+/mvnw
+/*.cmd
+
+
+
