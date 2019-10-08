@@ -1,4 +1,4 @@
-package com.myself.ScheduleTask;
+package com.myself.scheduleTask;
 
 import com.myself.service.NormalService;
 import org.slf4j.Logger;

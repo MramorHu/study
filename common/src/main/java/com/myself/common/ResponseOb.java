@@ -1,4 +1,4 @@
-package common;
+package com.myself.common;
 
 public class ResponseOb<T> {
 
