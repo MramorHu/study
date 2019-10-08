@@ -1,6 +1,8 @@
 package com.myself.controller;
 
+import com.myself.common.ResponseOb;
 import com.myself.service.StudyService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -9,8 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/study")
+@Api(value = "study", description = "study")
 public class StudyController {
 
     @Autowired
@@ -27,9 +32,9 @@ public class StudyController {
     }
 
     @ApiOperation(value = "测试普通返回",notes = "测试一下")
-    @ApiImplicitParam(name = "name", value = "用户名称",dataType = "String",required = false)
+    @ApiImplicitParam(paramType = "query",name = "name", value = "用户名称",dataType = "String",required = false)
     @GetMapping("/getString1")
-    public String getString1(){
+    public String getString1(String name){
         return studyService.getString();
     }
 
@@ -46,6 +51,14 @@ public class StudyController {
     @GetMapping("/testRedis1")
     public String testException() throws Exception{
         throw new Exception("aaa");
+    }
+
+    @ApiOperation(value = "测试mybatis",notes = "测试一下")
+    @GetMapping("/list")
+    public ResponseOb<Map> getList() throws Exception{
+        ResponseOb responseOb=new ResponseOb();
+        responseOb.setData(studyService.getList());
+        return responseOb;
     }
 
 

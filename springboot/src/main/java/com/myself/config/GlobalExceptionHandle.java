@@ -12,7 +12,6 @@ public class GlobalExceptionHandle {
 
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
-
     public ResponseOb globalException(HttpServletRequest httpServletRequest,Exception e) throws Exception{
         ResponseOb responseOb=new ResponseOb();
         responseOb.setCode(500);
