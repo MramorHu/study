@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableScheduling
 @EnableAsync
-@MapperScan("com.myself.dao")
+@MapperScan("com.myself.springboot.dao")
 public class SpringbootApplication {
 
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: springboot
   output:
     ansi:
       enabled: detect
@@ -31,7 +33,13 @@ spring:
 logging:
   file: E:/logs/study.log
   level:
-    com.myself: debug
+    com.myself.springboot: debug
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
