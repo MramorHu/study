@@ -1,7 +1,7 @@
-package com.myself.controller;
+package com.myself.springboot.controller;
 
 import com.myself.common.ResponseOb;
-import com.myself.service.StudyService;
+import com.myself.springboot.service.StudyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

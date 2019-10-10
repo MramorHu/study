@@ -1,4 +1,4 @@
-package com.myself.service;
+package com.myself.springboot.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

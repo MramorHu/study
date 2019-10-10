@@ -1,4 +1,4 @@
-package com.myself.stringUtil;
+package com.myself.stringutil;
 
 public class StringUtil {
 

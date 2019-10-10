@@ -1,9 +1,8 @@
-package com.myself.scheduleTask;
+package com.myself.springboot.scheduletask;
 
-import com.myself.service.NormalService;
+import com.myself.springboot.service.NormalService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
