@@ -22,6 +22,7 @@
         <module>common</module>
         <module>springboot</module>
         <module>eureka-server</module>
+        <module>ribbon-consumer</module>
     </modules>
 
     <dependencies>

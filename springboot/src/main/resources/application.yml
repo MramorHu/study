@@ -29,7 +29,6 @@ spring:
     serialization:
       write-dates-as-timestamps: false
 
-
 logging:
   file: E:/logs/study.log
   level:

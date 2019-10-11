@@ -1,7 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+
 server:
   port: 1111
 
 eureka:
+  server:
+    enable-self-preservation: false
   instance:
     hostname: localhost
   client:
