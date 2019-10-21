@@ -1,7 +1,7 @@
-package com.myself.feignconsumer.controller;
+package com.myself.apigateway.controller;
 
 import com.myself.common.ResponseOb;
-import com.myself.feignconsumer.service.HelloService;
+import com.myself.apigateway.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

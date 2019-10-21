@@ -1,4 +1,4 @@
-package com.myself.feignconsumer.service;
+package com.myself.apigateway.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;

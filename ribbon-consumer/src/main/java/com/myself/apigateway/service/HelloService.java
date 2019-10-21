@@ -1,4 +1,4 @@
-package com.myself.feignconsumer.service;
+package com.myself.apigateway.service;
 
 import com.myself.common.ResponseOb;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;

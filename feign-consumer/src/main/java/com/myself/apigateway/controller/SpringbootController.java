@@ -1,6 +1,6 @@
-package com.myself.feignconsumer.controller;
+package com.myself.apigateway.controller;
 
-import com.myself.feignconsumer.service.SpringbootService;
+import com.myself.apigateway.service.SpringbootService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

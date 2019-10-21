@@ -1,4 +1,4 @@
-package com.myself.feignconsumer;
+package com.myself.apigateway;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.myself.feignconsumer;
+package com.myself.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
