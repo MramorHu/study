@@ -22,10 +22,6 @@ public class StudyController {
     StudyService studyService;
 
     @ApiOperation(value = "测试普通返回",notes = "测试一下")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "id", value = "用户id",dataType = "String",required = false),
-            @ApiImplicitParam(name = "name", value = "用户名称",dataType = "String",required = false)
-    })
     @GetMapping("/getString")
     public String getString(){
         return studyService.getString();
@@ -35,7 +31,7 @@ public class StudyController {
     @ApiImplicitParam(paramType = "query",name = "name", value = "用户名称",dataType = "String",required = false)
     @GetMapping("/getString1")
     public String getString1(String name){
-        return studyService.getString();
+        return name;
     }
 
     @ApiOperation(value = "测试redis",notes = "测试一下")
