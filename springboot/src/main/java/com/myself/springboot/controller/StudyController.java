@@ -23,8 +23,11 @@ public class StudyController {
 
     @ApiOperation(value = "测试普通返回",notes = "测试一下")
     @GetMapping("/getString")
-    public String getString(){
-        return studyService.getString();
+    public ResponseOb getString(){
+        ResponseOb responseOb=new ResponseOb();
+        responseOb.setCode(200);
+        responseOb.setData(studyService.getString());
+        return responseOb;
     }
 
     @ApiOperation(value = "测试普通返回",notes = "测试一下")
