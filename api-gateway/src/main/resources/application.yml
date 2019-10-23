@@ -5,8 +5,18 @@ spring:
 server:
   port: 4444
 
+
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
-
+zuul:
+  routes:
+    api-springboot:
+      serviceId: springboot
+      path: /api-springboot/**
+    api-feign-consumer:
+      serviceId: feign-consumer
+      path: /api-feign-consumer/**
+  ignored-services: *
