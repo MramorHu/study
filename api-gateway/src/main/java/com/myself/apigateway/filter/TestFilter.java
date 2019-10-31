@@ -21,7 +21,7 @@ public class TestFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
-        return true;
+        return false;
     }
 
     @Override

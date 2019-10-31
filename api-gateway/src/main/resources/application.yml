@@ -15,12 +15,15 @@ eureka:
 
 
 
-zuul:
-  routes:
-    springboot: /springboot/**
+
+#zuul:
+#  routes:
+#    springboot: /springboot/**
+#  ignored-services: feign-consumer
 #      path: /springboot/**
 #      serviceId: springboot
 
 #springboot:
 #  ribbon:
 #    listOfServers: http://localhost:8081/,http://localhost:8082/  传统方式配置
+

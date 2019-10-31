@@ -1,6 +1,9 @@
+server:
+  port: 8080
+
 spring:
   application:
-    name: springboot
+    name: springboot-v1
   output:
     ansi:
       enabled: detect
@@ -42,3 +45,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1111/eureka/
+
