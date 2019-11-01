@@ -15,7 +15,6 @@ eureka:
 
 
 
-
 #zuul:
 #  routes:
 #    springboot: /springboot/**
@@ -26,4 +25,7 @@ eureka:
 #springboot:
 #  ribbon:
 #    listOfServers: http://localhost:8081/,http://localhost:8082/  传统方式配置
-
+zuul:
+  routes:
+    springboot: /springboot/**
+  prefix: /springboot

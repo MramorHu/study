@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: springboot-v1
+    name: springboot
   output:
     ansi:
       enabled: detect
