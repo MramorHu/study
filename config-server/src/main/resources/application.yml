@@ -1,0 +1,28 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        health:
+          enable: false
+        git:
+          uri: https://github.com/MramorHu/springcloudconfigcenter.git
+          searchPaths: '{application}'
+          username:
+          password:
+          basedir: E:/temp/config
+  security:
+    user:
+      name: myself-cloud
+      password: c633e80b-4782-4fa6-b091-17ba674b43ee
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    register-with-eureka: true

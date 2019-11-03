@@ -25,6 +25,8 @@
         <module>feign-consumer</module>
         <module>ribbon-consumer</module>
         <module>api-gateway</module>
+        <module>config-server</module>
+        <module>test-config-client</module>
     </modules>
 
     <dependencies>

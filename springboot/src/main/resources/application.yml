@@ -33,7 +33,7 @@ spring:
       write-dates-as-timestamps: false
 
 logging:
-  file: E:/logs/study.log
+  file: E:temp/logs/study.log
   level:
     com.myself.springboot: debug
 

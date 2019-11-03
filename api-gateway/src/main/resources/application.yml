@@ -29,3 +29,17 @@ zuul:
   routes:
     springboot: /springboot/**
   prefix: /springboot
+  retryable: false
+
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 4000
