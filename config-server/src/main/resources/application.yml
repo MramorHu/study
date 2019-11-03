@@ -7,19 +7,28 @@ spring:
   cloud:
     config:
       server:
-        health:
-          enable: false
+#        health:
+#          enable: false
         git:
           uri: https://github.com/MramorHu/springcloudconfigcenter.git
           searchPaths: '{application}'
           username:
           password:
           basedir: E:/temp/config
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
   security:
     user:
       name: myself-cloud
       password: c633e80b-4782-4fa6-b091-17ba674b43ee
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
 eureka:
   client:
