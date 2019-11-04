@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.config;
+package com.myself.springboot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

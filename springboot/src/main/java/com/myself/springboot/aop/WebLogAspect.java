@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.aop;
+package com.myself.springboot.aop;
 
 import com.alibaba.fastjson.JSONObject;
 import org.aspectj.lang.JoinPoint;

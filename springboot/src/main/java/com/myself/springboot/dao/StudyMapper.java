@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.dao;
+package com.myself.springboot.dao;
 
 import org.springframework.stereotype.Repository;
 

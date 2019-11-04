@@ -1,7 +1,7 @@
-package com.myself.testconfigclient.service.impl;
+package com.myself.springboot.service.impl;
 
-import com.myself.testconfigclient.dao.StudyMapper;
-import com.myself.testconfigclient.service.StudyService;
+import com.myself.springboot.service.StudyService;
+import com.myself.springboot.dao.StudyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;

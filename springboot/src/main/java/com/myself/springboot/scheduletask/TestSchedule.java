@@ -1,6 +1,6 @@
-package com.myself.testconfigclient.scheduletask;
+package com.myself.springboot.scheduletask;
 
-import com.myself.testconfigclient.service.NormalService;
+import com.myself.springboot.service.NormalService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

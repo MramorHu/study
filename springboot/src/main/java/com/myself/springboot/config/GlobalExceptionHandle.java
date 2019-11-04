@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.config;
+package com.myself.springboot.config;
 
 import com.myself.common.ResponseOb;
 import org.springframework.web.bind.annotation.ControllerAdvice;

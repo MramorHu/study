@@ -1,7 +1,7 @@
-package com.myself.testconfigclient.controller;
+package com.myself.springboot.controller;
 
 import com.myself.common.ResponseOb;
-import com.myself.testconfigclient.service.StudyService;
+import com.myself.springboot.service.StudyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
