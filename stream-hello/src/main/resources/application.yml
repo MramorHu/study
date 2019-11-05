@@ -1,0 +1,17 @@
+server:
+  port: 6666
+
+
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
+  application:
+    name: stream-hello
+
+logging:
+  level:
+    com.myself.streamhello: debug
