@@ -6,7 +6,7 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
 
-@EnableBinding(Sink.class)
+@EnableBinding({Sink.class,SinkSender.class})
 public class SinkReceiver {
 
     private static Logger logger= LoggerFactory.getLogger(SinkReceiver.class);

@@ -1,5 +1,5 @@
 server:
-  port: 6666
+  port: 8888
 
 
 
@@ -11,6 +11,14 @@ spring:
     password: springcloud
   application:
     name: stream-hello
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: common-topic
+          group: stream-hello
+        output:
+          destination: common-topic
 
 logging:
   level:
