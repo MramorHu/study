@@ -15,10 +15,10 @@ spring:
     stream:
       bindings:
         input:
-          destination: common-topic
+#          destination: common-topic
           group: stream-hello
-        output:
-          destination: common-topic
+#        output:
+#          destination: common-topic
 
 logging:
   level:

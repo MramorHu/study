@@ -1,12 +1,11 @@
-package com.myself.testconfigclient.controller;
+package com.myself.springboot.controller;
 
 import com.myself.common.ResponseOb;
-import com.myself.testconfigclient.service.StudyService;
+import com.myself.springboot.service.StudyService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.myself.testconfigclient;
+package com.myself.springboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

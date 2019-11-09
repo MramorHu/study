@@ -1,6 +1,6 @@
-package com.myself.testconfigclient.service.impl;
+package com.myself.springboot.service.impl;
 
-import com.myself.testconfigclient.service.StudyService;
+import com.myself.springboot.service.StudyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

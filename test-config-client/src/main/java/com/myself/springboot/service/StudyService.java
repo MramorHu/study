@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.service;
+package com.myself.springboot.service;
 
 public interface StudyService {
 

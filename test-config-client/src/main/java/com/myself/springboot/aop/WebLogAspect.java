@@ -1,4 +1,4 @@
-package com.myself.testconfigclient.aop;
+package com.myself.springboot.aop;
 
 import com.alibaba.fastjson.JSONObject;
 import org.aspectj.lang.JoinPoint;
@@ -25,7 +25,7 @@ public class WebLogAspect {
 
     private ThreadLocal<Long> startTime=new ThreadLocal();
 
-    @Pointcut("execution(* com.myself.testconfigclient.controller..*.*(..))")
+    @Pointcut("execution(* com.myself.springboot.controller..*.*(..))")
     public void webLog(){}
 
     @Before("webLog()")
