@@ -29,6 +29,7 @@
         <module>config-server</module>
         <module>test-config-client</module>
         <module>stream-hello</module>
+        <module>zipkin-server</module>
     </modules>
 
     <dependencies>

@@ -16,7 +16,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableBinding(MyselfSender.class)
 public class SpringbootApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringbootApplication.class, args);
     }

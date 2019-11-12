@@ -14,8 +14,6 @@ import java.util.Map;
 @Service
 public class StudyServiceImpl implements StudyService {
 
-    private static Logger logger= LoggerFactory.getLogger(StudyServiceImpl.class);
-
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
     @Autowired
@@ -23,7 +21,6 @@ public class StudyServiceImpl implements StudyService {
 
     @Override
     public String getString() {
-        logger.debug("-----------------springboot getString");
         return "hello world!";
     }
 

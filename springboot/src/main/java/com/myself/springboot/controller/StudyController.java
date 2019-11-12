@@ -1,15 +1,22 @@
 package com.myself.springboot.controller;
 
+import brave.sampler.Sampler;
 import com.myself.common.ResponseOb;
 import com.myself.springboot.service.StudyService;
+import com.myself.springboot.service.impl.StudyServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
 import java.util.Map;
 
 @RestController
@@ -17,12 +24,19 @@ import java.util.Map;
 @Api(value = "study", description = "study")
 public class StudyController {
 
+    private static Logger logger= LoggerFactory.getLogger(StudyController.class);
+
     @Autowired
     StudyService studyService;
 
     @ApiOperation(value = "测试普通返回",notes = "测试一下")
     @GetMapping("/getString")
-    public ResponseOb getString(){
+    public ResponseOb getString(HttpServletRequest httpServletRequest){
+        Enumeration enumeration=httpServletRequest.getHeaderNames();
+        while (enumeration.hasMoreElements()){
+            String a=enumeration.nextElement().toString();
+            logger.debug("-----------------header:"+a+","+httpServletRequest.getHeader(a));
+        }
         ResponseOb responseOb=new ResponseOb();
         responseOb.setCode(200);
         responseOb.setData(studyService.getString());

@@ -36,6 +36,9 @@ spring:
     port: 5672
     username: springcloud
     password: springcloud
+  sleuth:
+    sampler:
+      probability: 1
 logging:
   file: E:/temp/logs/study.log
   level:

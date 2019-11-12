@@ -1,6 +1,9 @@
 spring:
   application:
     name: ribbon-consumer
+  sleuth:
+    sampler:
+      probability: 1
 
 server:
   port: 2222
