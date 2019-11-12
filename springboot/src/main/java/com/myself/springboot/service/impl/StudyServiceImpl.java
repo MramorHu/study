@@ -2,6 +2,8 @@ package com.myself.springboot.service.impl;
 
 import com.myself.springboot.service.StudyService;
 import com.myself.springboot.dao.StudyMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -12,6 +14,8 @@ import java.util.Map;
 @Service
 public class StudyServiceImpl implements StudyService {
 
+    private static Logger logger= LoggerFactory.getLogger(StudyServiceImpl.class);
+
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
     @Autowired
@@ -19,6 +23,7 @@ public class StudyServiceImpl implements StudyService {
 
     @Override
     public String getString() {
+        logger.debug("-----------------springboot getString");
         return "hello world!";
     }
 

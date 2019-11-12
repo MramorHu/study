@@ -2,6 +2,8 @@ package com.myself.apigateway.controller;
 
 import com.myself.common.ResponseOb;
 import com.myself.apigateway.service.HelloService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,8 @@ import java.util.Map;
 @RequestMapping(value = "/springboot")
 public class ConsumerController {
 
+    private static Logger logger = LoggerFactory.getLogger(ConsumerController.class);
+
     @Autowired
     RestTemplate restTemplate;
     @Autowired
@@ -22,6 +26,7 @@ public class ConsumerController {
 
     @GetMapping(value = "/study/getString")
     public String getString(){
+        logger.info("-------------------------ribbon-consumer-getString");
         return restTemplate.getForEntity("http://springboot/study/getString",String.class).getBody();
     }
 
