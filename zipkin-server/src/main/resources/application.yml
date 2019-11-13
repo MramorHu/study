@@ -1,14 +1,28 @@
 server:
   port: 9411
 
+zipkin:
+  storage:
+    type: mysql
 spring:
   application:
     name: zipkin-server
   main:
     allow-bean-definition-overriding: true
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
 management:
   metrics:
     web:
       server:
         auto-time-requests: false
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    register-with-eureka: true

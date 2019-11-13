@@ -2,6 +2,10 @@ server:
   port: 8080
 
 spring:
+  zipkin:
+    base-url: http://localhost:9411/
+    sender:
+      type: web
   application:
     name: springboot
   output:
@@ -31,11 +35,11 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: false
-  rabbitmq:
-    host: 192.168.1.4
-    port: 5672
-    username: springcloud
-    password: springcloud
+#  rabbitmq:
+#    host: 192.168.10.157
+#    port: 5672
+#    username: springcloud
+#    password: springcloud
   sleuth:
     sampler:
       probability: 1
